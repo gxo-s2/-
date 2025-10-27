@@ -51,3 +51,15 @@
 - 학습 내용 : React Hooks (`useState`, `useEffect`)를 활용한 상태 관리 및 외부 모듈(LocalStorage 유틸리티)과의 연동 패턴.
 
 ### Day 2(2025.10.27)
+
+#### step 5 - 기록 삭제 및 수정 기능 구현
+- 작업 내용:
+    - `App.jsx` 수정 : 목록 아이템에 '삭제' 및 '수정' 버튼 추가.
+    - `handleDelete(id)` 구현: `deleteRecord(id)` 호출 및 상태 업데이트.
+    - `handleEdit(record)` 구현: `isEditing`, `editingRecordId` 상태를 활용하여 수정 모드 전환 로직 추가.
+    - 폼 제출 로직 수정: `isEditing` 상태에 따라 `updateRecord` 또는 `saveRecord` 호출하도록 분기 처리.
+
+- **Gemini CLI 사용 프롬프트** : "현재 App.jsx를 수정하여 수면 기록 목록에 삭제 및 수정 기능을 추가해줘."
+
+- 결과 및 수정사항 : CRUD 기능 완성. 수정 모드에서 폼 상태 관리가 복잡하여 로직 검토 및 수정 필요 (모호하거나 출처가 불분명한 부분은 확실하지 않음).
+- 학습 내용 : React에서 복잡한 폼 상태와 조건부 렌더링을 처리하는 방법, 상태 분기 처리를 통한 기능 구현.
