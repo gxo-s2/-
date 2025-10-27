@@ -28,3 +28,13 @@
 
 - 결과 및 수정사항 : 앱의 기본 뼈대 완성. Tailwind CSS 클래스 정렬(Class Ordering) 규칙 적용 확인.
 - 학습 내용 : React의 컴포넌트 구조 이해, Tailwind CSS를 활용한 신속한 반응형 레이아웃 구성 방법.
+
+#### step3 - LocalStorage CRUD 유틸리티 구현
+- 작업 내용:
+    - 'sleepStorage.js' 파일 생성.
+    - 수면 기록 데이터('sleep_records')의 **CRUD** (생성, 읽기, 수정, 삭제)를 담당하는 유틸리티 함수 구현('getAllRecords','saveRecord', 'updateRecord', 'deleteRecord').
+
+- **Gemini CLI 사용 프롬포트** : "수면 기록 데이터(sleep_records)를 LocalStorage에 저장하고 관리하는 JavaScript 유틸리티 함수들을 만들어줘. 이 함수들은 JSON.parse/stringify를 사용하여 데이터를 안전하게 다뤄야 해."
+
+- 결과 및 수정사항 : 데이터 로직 모듈화 완료. JSON.parse/stringify 에러 처리 로직 추가(수정사항)
+- 학습 내용 : LocalStorage의 비동기적 특성 및 JSON을 활용한 데이터 직렬화/역직렬화의 중요성.
