@@ -38,3 +38,14 @@
 
 - 결과 및 수정사항 : 데이터 로직 모듈화 완료. JSON.parse/stringify 에러 처리 로직 추가(수정사항)
 - 학습 내용 : LocalStorage의 비동기적 특성 및 JSON을 활용한 데이터 직렬화/역직렬화의 중요성.
+
+#### step4 - UI와 데이터 로직 통합 및 기능 구현
+- 작업 내용:
+    - 'App.jsx' 수정 : React의 'useState'와 'useEffect'를 사용하여 수면 기록 상태 관리 로직 추가.
+    - 컴포넌트 마운트 시 'getAllRecords()'를 호출하여 데이터 로드.
+    - 새로운 기록 생성 시 'saveRecord(newRecord)'를 호출하고, UI 상태를 즉시 업데이트하도록 'handleSubmit' 함수 수정.
+
+-**Gemini CLI 사용 프롬프트**: "현재 App.jsx 파일에서 sleepStorage.js의 getAllRecords, saveRecord 함수를 사용하여 기능을 구현할 수 있도록 코드를 수정해줘."
+
+- 결과 및 수정사항 : 기록 생성 기능 및 목록 표시 기능 정상 작동.
+- 학습 내용 : React Hooks (`useState`, `useEffect`)를 활용한 상태 관리 및 외부 모듈(LocalStorage 유틸리티)과의 연동 패턴.
